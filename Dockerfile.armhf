@@ -105,6 +105,8 @@ RUN \
  mkdir -p /tmp/noauth && \
  tar -xf /tmp/guacamole-noauth.tar.gz --strip=1 -C /tmp/noauth && \
  mv /tmp/noauth/guacamole-auth-noauth-${GUAC_VER}.jar /defaults/ && \
+ ln -s /usr/lib/freerdp/guacdr-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacdr-client.so && \
+ ln -s /usr/lib/freerdp/guacsnd-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacsnd-client.so && \
  echo "**** clean up ****" && \
  rm -rf \
 	/var/lib/${TOMCAT_VER}/webapps/ROOT \

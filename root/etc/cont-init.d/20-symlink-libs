@@ -1,4 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-ln -s /usr/lib/freerdp/guacdr-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacdr-client.so || true
-ln -s /usr/lib/freerdp/guacsnd-client.so /usr/lib/x86_64-linux-gnu/freerdp/guacsnd-client.so || true
